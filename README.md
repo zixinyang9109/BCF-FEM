@@ -80,7 +80,7 @@ Our registration code is within the BCF-FEM folder.
 
 The only dependence is the [eigen library](https://drive.google.com/drive/folders/1TnSgEn-Km1tiKHBdASub9rFEpTOj6R8J?usp=sharing). Download and put it inside the BCF-FEM folder, or change its path in the CMakeLists.txt. 
 
-The code is developed on Windows 10 using [Visual Studio 2019](https://learn.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-170). You can run the following files within the VS our use built .exe files. Please set your EXECUTABLE_OUTPUT_PATH and LIBRARY_OUTPUT_PATH in the CMakeLists.txt. 
+The code is developed on Windows 10 using [Visual Studio 2019](https://learn.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-170). You can run the following files within the VS or use built .exe files. Please set your EXECUTABLE_OUTPUT_PATH and LIBRARY_OUTPUT_PATH in the CMakeLists.txt. 
 
 
 
