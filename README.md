@@ -11,8 +11,41 @@ The preprocessed dataset and our raw results can be downloaded via:
 - [PBSM dataest](https://drive.google.com/drive/folders/1QAGupR4feKBT0FdsBJXGhF74WL53JCmk?usp=sharing) 
 - [Sparse dataest](https://drive.google.com/drive/folders/1TzAVQzJkgcccABnnGOT5Wfy1Rp8xA0Y3?usp=sharing)
 
-If you use the datasets, please cite the corresponding papers:
+## Our Code
 
+### Run Non-rigid Organ Registration
+Our registration code is within the BCF-FEM folder. 
+
+The only dependence is the [eigen library](https://drive.google.com/drive/folders/1TnSgEn-Km1tiKHBdASub9rFEpTOj6R8J?usp=sharing). Download and put it inside the BCF-FEM folder, or change its path in the CMakeLists.txt. 
+
+The code is developed on Windows 10 using [Visual Studio 2019](https://learn.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-170). You can run the following files within the VS or use built .exe files. Please set your EXECUTABLE_OUTPUT_PATH and LIBRARY_OUTPUT_PATH in the CMakeLists.txt. 
+
+
+
+```
+# Please change the data paths to your paths 
+app/Demo.cpp                       
+app/run_our_phantom.cpp
+app/run_pbsm_dataset.cpp
+app/run_sparse_dataset.cpp
+```
+
+### Evaluation
+
+```
+# change the data paths to yours
+Evaluation/eval_our_dataset.py
+Evaluation/eval_pbsm_dataset.py
+Evaluation/eval_sparse_dataset.py
+```
+
+### Test on Other Datasets
+
+We use the [.off](https://en.wikipedia.org/wiki/OFF_(file_format)) format to store data. If you want to transfer other formats such as .vtk and .ply to .off. Please see the functions within the
+```
+Data_Format_Prepare/format_transfer.py
+```
+## Referemce
 The reference for our phantoms:
 ```bibtex
 @article{yang2024boundary,
@@ -73,40 +106,6 @@ The reference for PBSM dataset:
 }
 ```
 
-## Our Code
-
-### Run Non-rigid Organ Registration
-Our registration code is within the BCF-FEM folder. 
-
-The only dependence is the [eigen library](https://drive.google.com/drive/folders/1TnSgEn-Km1tiKHBdASub9rFEpTOj6R8J?usp=sharing). Download and put it inside the BCF-FEM folder, or change its path in the CMakeLists.txt. 
-
-The code is developed on Windows 10 using [Visual Studio 2019](https://learn.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-170). You can run the following files within the VS or use built .exe files. Please set your EXECUTABLE_OUTPUT_PATH and LIBRARY_OUTPUT_PATH in the CMakeLists.txt. 
-
-
-
-```
-# Please change the data paths to your paths 
-app/Demo.cpp                       
-app/run_our_phantom.cpp
-app/run_pbsm_dataset.cpp
-app/run_sparse_dataset.cpp
-```
-
-### Evaluation
-
-```
-# change the data paths to yours
-Evaluation/eval_our_dataset.py
-Evaluation/eval_pbsm_dataset.py
-Evaluation/eval_sparse_dataset.py
-```
-
-### Test on Other Datasets
-
-We use the [.off](https://en.wikipedia.org/wiki/OFF_(file_format)) format to store data. If you want to transfer other formats such as .vtk and .ply to .off. Please see the functions within the
-```
-Data_Format_Prepare/format_transfer.py
-```
 
 ## Related Software/ Projects
 
