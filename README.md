@@ -45,7 +45,7 @@ We use the [.off](https://en.wikipedia.org/wiki/OFF_(file_format)) format to sto
 ```
 Data_Format_Prepare/format_transfer.py
 ```
-## Referemce
+## Reference
 The reference for our phantoms:
 ```bibtex
 @article{yang2024boundary,
