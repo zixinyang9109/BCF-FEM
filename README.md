@@ -50,7 +50,7 @@ Please check:
 ```
 Data_Format_Prepare/prepare_dataset.py
 ```
-, which includes an example of preparing a preoperative model .stl and an intraoperative point cloud .ply to the format shown in the Demo. It contains functions to generate the tetrahedron from the surface mesh, downsample the point cloud, and downsample the intraoperative point cloud.
+, which includes an example of preparing a preoperative model .stl and an intraoperative point cloud .ply to the format shown in the Demo. It contains functions to generate the tetrahedron from the surface mesh, downsample, and filter the intraoperative point cloud.
 
 ## Reference
 The reference for our phantoms:
