@@ -18,7 +18,7 @@ Our registration code is within the BCF-FEM folder.
 
 The only dependence is the [eigen library](https://drive.google.com/drive/folders/1TnSgEn-Km1tiKHBdASub9rFEpTOj6R8J?usp=sharing). Download and put it inside the BCF-FEM folder, or change its path in the CMakeLists.txt. 
 
-The code is developed on Windows 10 using [Visual Studio 2019](https://learn.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-170). You can run the following files within the VS or use built .exe files. Please set your EXECUTABLE_OUTPUT_PATH and LIBRARY_OUTPUT_PATH in the CMakeLists.txt. 
+The code is developed on Windows 10 using [Visual Studio 2019](https://learn.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-170). You can run the following files within the VS or use the built .exe files. Please set your EXECUTABLE_OUTPUT_PATH and LIBRARY_OUTPUT_PATH in the CMakeLists.txt. 
 
 
 
@@ -50,7 +50,7 @@ Please check:
 ```
 Data_Format_Prepare/prepare_dataset.py
 ```
-, which includes an example of preparing a preoperative model .stl and an intraoperative point cloud .ply to the format shown in the Demo. 
+, which includes an example of preparing a preoperative model .stl and an intraoperative point cloud .ply to the format shown in the Demo. It contains functions to generate the tetrahedron from the surface mesh, downsample the point cloud, and downsample the intraoperative point cloud.
 
 ## Reference
 The reference for our phantoms:
