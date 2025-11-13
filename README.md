@@ -45,6 +45,13 @@ We use the [.off](https://en.wikipedia.org/wiki/OFF_(file_format)) format to sto
 ```
 Data_Format_Prepare/format_transfer.py
 ```
+
+Please check:
+```
+Data_Format_Prepare/prepare_dataset.py
+```
+, which includes an example of preparing a preoperative model .stl and an intraoperative point cloud .ply to the format shown in the Demo. 
+
 ## Reference
 The reference for our phantoms:
 ```bibtex
