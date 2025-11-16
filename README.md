@@ -11,7 +11,7 @@ The preprocessed dataset and our raw results can be downloaded via:
 - [PBSM dataest](https://drive.google.com/drive/folders/1QAGupR4feKBT0FdsBJXGhF74WL53JCmk?usp=sharing) 
 - [Sparse dataest](https://drive.google.com/drive/folders/1TzAVQzJkgcccABnnGOT5Wfy1Rp8xA0Y3?usp=sharing)
 
-## Our Code
+## Our Code (very easy to run!)
 
 ### Run Non-rigid Organ Registration
 Our registration code is within the BCF-FEM folder. 
@@ -50,10 +50,12 @@ Please check:
 ```
 Data_Format_Prepare/prepare_dataset.py
 ```
-, which includes an example of preparing a preoperative model .stl and an intraoperative point cloud .ply to the format shown in the Demo. It contains functions to generate the tetrahedron from the surface mesh, downsample, and filter the intraoperative point cloud.
+, which includes an example of preparing a preoperative model .stl and an intraoperative point cloud .ply to the format shown in the Demo. It contains functions to generate the tetrahedron from the surface mesh, downsample, and filter the intraoperative point cloud:
 
 
 ![plot](./Data_Format_Prepare/Prepare_data.jpg)
+
+Then, you can run our the BCF-FEM to get registration results:
 
 ![plot](./Data_Format_Prepare/Registration_comparison.jpg)
 
