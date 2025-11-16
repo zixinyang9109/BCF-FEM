@@ -52,6 +52,11 @@ Data_Format_Prepare/prepare_dataset.py
 ```
 , which includes an example of preparing a preoperative model .stl and an intraoperative point cloud .ply to the format shown in the Demo. It contains functions to generate the tetrahedron from the surface mesh, downsample, and filter the intraoperative point cloud.
 
+
+![plot](.Data_Format_Prepare/Prepare_data.jpg)
+
+![plot](.Data_Format_Prepare/Registration_comparison.jpg)
+
 ## Reference
 The reference for our phantoms:
 ```bibtex
