@@ -1,5 +1,13 @@
 # Boundary Constraint-Free Biomechanical Model-Based Surface Matching for Intraoperative Liver Deformation Correction
 
+
+
+https://github.com/user-attachments/assets/bfac26af-f29b-4098-8b31-646bdb1ff5de
+
+
+
+
+
 ## Datasets
 
 Datasets include our constructed phantoms, PBSM dataset, and [Sparse data challenge dataset](https://osf.io/etpq9).
